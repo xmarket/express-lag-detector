@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(ms, logFn) {
+module.exports = function(logFn) {
   var stats = {
     delay: 0,
     maxDelay: 0,
@@ -10,8 +10,14 @@ module.exports = function(ms, logFn) {
     reqCount: 0
   },
     start = time(),
-    checkInterval = ms,
+    checkInterval = 50,
     timeout
+
+  if (!logFn) {
+    logFn = function(data) {
+      console.log(data)
+    }
+  }
 
   scheduleCheck(checkInterval)
 
