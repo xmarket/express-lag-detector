@@ -1,0 +1,25 @@
+{
+  "name": "express-lag-detector",
+  "version": "1.0.0",
+  "description": "Track event loop lag as express.js middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmarket/express-lag-detector.git"
+  },
+  "keywords": [
+    "eventloop",
+    "ioloop",
+    "express.js",
+    "middleware"
+  ],
+  "author": "Taras Kunch <taras.kunch@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmarket/express-lag-detector/issues"
+  },
+  "homepage": "https://github.com/xmarket/express-lag-detector#readme"
+}
